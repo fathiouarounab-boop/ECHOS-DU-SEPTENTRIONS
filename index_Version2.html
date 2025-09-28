@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ÉCHOS DU SEPTENTRION</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <img src="images/benin-flag.png" alt="Drapeau du Bénin" class="flag" />
+      <div>
+        <h1>ÉCHOS DU SEPTENTRION</h1>
+        <p class="slogan">La voix du Nord béninois 🇧🇯</p>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <button id="menu-toggle" aria-expanded="false" aria-controls="menu-list">☰</button>
+      <ul id="menu-list" class="menu-list">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#featured">Article</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="about card">
+      <h2>À propos</h2>
+      <p>
+        ÉCHOS DU SEPTENTRION est un organe de presse écrite indépendant, dédié à valoriser les réalités
+        culturelles, sociales et religieuses du Nord du Bénin. Nous partageons des articles, interviews,
+        reportages et analyses locales produits par des journalistes et contributeurs du territoire.
+      </p>
+    </section>
+
+    <section id="featured" class="card featured-article">
+      <h2>📰 Article en vedette</h2>
+      <div class="featured-content">
+        <img src="images/article-image.jpg" alt="Image de l'article" id="featured-image" />
+        <div class="featured-text">
+          <h3 id="featured-title">Olympe Bhely-Quenum : un parcours emblématique</h3>
+          <p class="meta"><strong>Date :</strong> <span id="featured-date">26 septembre 2025</span></p>
+          <p id="featured-excerpt">
+            Le célèbre écrivain béninois Olympe Bhely-Quenum incarne l’excellence littéraire africaine. Son œuvre
+            traverse les générations et inspire les jeunes du Septentrion.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="articles" class="card articles-list">
+      <h2>Derniers articles</h2>
+      <div id="articles-container">
+        <!-- Les articles seront injectés ici par script.js -->
+      </div>
+    </section>
+
+    <section id="contact" class="card contact">
+      <h2>📞 Contact</h2>
+      <p>WhatsApp : +229 XX XX XX XX</p>
+      <p>Email : <a href="mailto:echosseptentrion@example.com">echosseptentrion@example.com</a></p>
+
+      <form id="contact-form" class="contact-form" action="#" onsubmit="submitContact(event)">
+        <label>
+          Votre nom
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Votre email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit">Envoyer</button>
+        <p id="contact-status" class="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ÉCHOS DU SEPTENTRION. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
